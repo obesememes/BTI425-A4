@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Pagination from 'react-bootstrap/Pagination';
 import ArtworkCard from '@/components/ArtworkCard';
+import validObjectIDList from '@/public/data/validObjectIDList.json'
 
 const PER_PAGE = 12;
 
@@ -23,14 +24,17 @@ export default function Artwork() {
     const [page, setPage] = useState(1);
     useEffect(() => {
         if (data?.objectIDs) {
+            let filteredResults = validObjectIDList.objectIDs.filter(x => data.objectIDs.includes(x));  
             let results = [];
-            for (let i = 0; i < data.objectIDs.length; i += PER_PAGE) {
-                results.push(data.objectIDs.slice(i, i + PER_PAGE));
+            for (let i = 0; i < filteredResults.length; i += PER_PAGE) {
+                results.push(filteredResults.slice(i, i + PER_PAGE));
             }
+    
             setArtworkList(results);
             setPage(1);
         }
     }, [data]);
+    
     if (error) return <Error statusCode={404} />;
 
     return (

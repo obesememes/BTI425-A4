@@ -1,12 +1,12 @@
 /*********************************************************************************
- *  BTI425 – Assignment 4
+ *  BTI425 – Assignment 5
  * 
  *  I declare that this assignment is my own work in accordance with Seneca's 
  *  Academic Integrity Policy: 
  *  
  *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
  *  
- *  Name: Mustansir Lightwalla  Student ID: 146343231  Date: 03/09/25
+ *  Name: Mustansir Lightwalla  Student ID: 146343231  Date: 03/23/25
  ********************************************************************************/
 
 import Image from 'react-bootstrap/Image';
@@ -38,7 +38,7 @@ export default function Home() {
                         at Fort Tryon Park in Upper Manhattan, contains an extensive collection of art,
                          architecture, and artifacts from medieval Europe.
                     </p>
-  
+
                     <p>
                     The Metropolitan Museum of Art was founded in 1870 with its mission to bring art and art
                      education to the American people. The museum's permanent collection consists of works of 
@@ -65,7 +65,7 @@ export default function Home() {
                             target="_blank"
                             rel="noreferrer"
                         >
-                            Wikipedia
+                            Metropolitan Museum of Art
                         </a>
                         .
                     </p>
