@@ -49,7 +49,7 @@ export default function MainNav() {
                                 value={searchField}
                                 onChange={(e) => setSearchField(e.target.value)}
                             />
-                            <Button type="submit" variant="outline-success">Search</Button>
+                            <Button type="submit" variant="light">Search</Button>
                         </Form>
                         {/* User Dropdown */}
                         <Nav>
